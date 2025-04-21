@@ -1,0 +1,608 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(237, 233, 233);
+}
+
+header {
+    height: 600px;
+    background-image: url(image12.jpg);
+    background-size: cover;
+    padding: 3%;
+    font-size: 4.5rem;
+    color: rgb(255, 228, 161);
+    text-align: center;
+}
+
+#Heading {
+    position: relative;
+    animation: positionTop 1.6s ease-in 0s 1 normal;
+}
+
+#text {
+    float: right;
+}
+
+@keyframes positionTop {
+    from {
+        top: -250px;
+    }
+    to {
+        top: 0px;
+    }
+}
+/*****NAVBAR****/
+#navbardiv {
+    height: 60px;
+    background-color: lightgray;
+}
+
+#navbardiv a {
+    height: 60px;
+    width: 140px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: rgb(0, 0, 0);
+}
+
+#navbardiv a:hover {
+    background-color: #c49713;
+}
+
+#navbardiv a:active {
+    background-color: aliceblue;
+}
+
+#HomeTag {
+    background-color: #778899;
+    color: white;
+}
+
+#HomeTag:active {
+    background-color: aliceblue;
+    color: black;
+}
+
+#navbardiv .topnav-right {
+    float: right;
+}
+
+/* *****Body***** */
+
+
+#IntroHeading,
+h3 {
+    padding: 2%;
+    font-size: 3rem;
+    margin-top: 3%;
+    letter-spacing: 0.21vw;
+}
+h4 {
+    font-size: 2rem;
+    margin: 2.3%;
+    padding: 1.2% 0%;
+    text-decoration: underline;
+    color: #b866c7;
+}
+
+#Frontendheading,
+#BackendHeading {
+    text-align: center;
+}
+
+#FrontendPartSpan,
+#BackendPart {
+    padding: 0.6%;
+    color: #6860a3;
+    }
+
+.iframeDives {
+    text-align: center;
+    margin: 4%;
+    object-fit: cover;
+}
+
+iframe {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.iframeDives {
+    cursor: pointer;
+}
+
+p {
+    font-size: 2rem;
+    padding-left: 2.2%;
+    line-height: 1.35;
+    word-spacing: 0.1vw;
+}
+
+ul {
+    padding-left: 2.2%;
+    margin: 3% 0% 0% 3%;
+}
+
+li {
+    list-style-type: circle;
+    padding: 0.5% 0.5% 0% 0.5%;
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 3.5% 0%;
+    padding: 1% 0%;
+}
+
+#Comment {
+    text-align: center;
+    margin: 4% 0%;
+    padding: 2% 0%;
+    font-size: 3rem;
+}
+
+#textareaDiv {
+    text-align: center;
+}
+
+textarea,
+input,
+.JsClass,
+fieldset {
+    height: 220px;
+    width: 60%;
+    font-size: 1.67rem;
+    border: 2px solid #178899;
+    border-radius: 12px;
+    background-color: rgb(225, 224, 224);
+    padding: 0.8%;
+    outline: none;
+}
+
+input {
+    height: 55px;
+    width: 62.5%;
+}
+#aligningDiv,
+#nameDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+#nameDiv {
+    flex-direction: column;
+}
+fieldset {
+    height: auto;
+    line-height: 1.5;
+    width: 100%;
+}
+#aligningDiv {
+    flex-direction: column;
+}
+.JsClass {
+    margin: 2%;
+    padding: 0%;
+    border: none;
+    background-color: inherit;
+    height: auto;
+}
+
+#submitDiv {
+    margin: 1.5% 5%;
+    text-align: right;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    margin-right: 20%;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+button:active {
+    background-color: silver;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#esistingComments {
+    font-size: 3rem;
+    color: #6860a3;
+}
+
+#CommentOfPeople {
+    padding: 1%;
+}
+
+legend {
+    font-size: large;
+    margin-left: 2%;
+}
+
+#Developer {
+    margin: 2%;
+    text-align: center;
+}
+
+#PageFounder {
+    margin: 12% 0% 6% 0%;
+    padding: 0% 1%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.4rem;
+    color: #7866c7;
+}
+
+#Imagediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myPic {
+    width: 250px;
+    animation: imageAnimator 1s linear 0s infinite alternate;
+    border-radius: 50%;
+}
+
+#DeveloperName {
+    margin: 4% 0% 5.6% 0%;
+    font-size: 2.6rem;
+    letter-spacing: 0.8vw;
+    color: #7d6313;
+}
+
+#Contacts {
+    font-size: 2.3rem;
+    margin: 7% 0%;
+}
+
+.ContactSpans {
+    font-size: 1.5rem;
+    padding: 1%;
+    margin: 2%;
+    border-radius: 40px;
+}
+
+#YouTubeSpan {
+    border: 1px solid rgb(216, 9, 9);
+}
+
+#YouTubeSpan a,
+.fa-youtube {
+    color: rgb(216, 9, 9);
+}
+
+#WhatsAppSpan {
+    border: 1px solid rgb(18, 133, 18);
+}
+
+#WhatsAppSpan a,
+.fa-whatsapp {
+    color: rgb(18, 133, 18);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    color:black;
+}
+
+ pre a {
+    color: black;
+}
+
+@keyframes imageAnimator {
+    0% {
+        border-top-left-radius: 50%;
+        box-shadow: 3px 3px #778899;
+    }
+}
+
+/* **Classes Fromed For JavaScript Requirment.** */
+
+.header2 {
+    background-image: url(image11\ copy.jpg);
+    filter: brightness(0.82);
+}
+
+.hidden {
+    display: none;
+}
+/* and the JsClass is also for JavaScript. */
+
+/* *****Coding below is to make the web Responsive***** */
+
+/* MEDIA QUERRY FOR DEVICES HAVING WIDTH B/W 1000PX AND 1120PX */
+@media (min-width:1000px) and (max-width:1120px) {
+    header {
+        height: 500px;
+    }
+
+    #esistingComments {
+        font-size: 3.6rem;
+    }
+}
+
+/* MEDIA QUERRY FOR DEVICES HAVING WIDTH B/W 800PX AND 1000PX */
+@media (min-width:800px) and (max-width:1000px) {
+    header {
+        height: 450px;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    #esistingComments {
+        font-size: 3.5rem;
+    }
+}
+
+/* MEDIA QUERRY FOR DEVICES HAVING WIDTH B/W 600PX AND 800PX: */
+
+@media (min-width:600px) and (max-width:800px) {
+    header {
+        height: 340px;
+    }
+
+    #Heading {
+        font-size: 2.5rem;
+    }
+
+    #navbardiv {
+        height: 50px;
+        position: absolute;
+        position: sticky;
+        top: 0px;
+        background-color: lightgray;
+    }
+
+    #navbardiv a {
+        height: 50px;
+        width: 120px;
+        font-size: 1.4rem;
+        float: left;
+        color: rgb(0, 0, 0);
+        margin-right: 1%;
+    }
+
+    #navbardiv .topnav-right {
+        float: left;
+        width: 110px;
+    }
+
+    #navbardiv #HelpAnchor {
+        float: left;
+        width: 60px;
+    }
+
+    .JsClass {
+        width: 90%;
+    }
+
+    textarea {
+        width: 88%;
+    }
+
+    input {
+        width: 90%;
+        margin: 5%;
+    }
+
+    button {
+        margin-right: 2%;
+    }
+
+    #esistingComments {
+        font-size: 3.2rem;
+    }
+}
+
+/* MEDIA QUERRY FOR DEVICES HAVING WIDTH B/W 400PX AND 600PX: */
+
+@media (min-width:400px) and (max-width:600px) {
+    header {
+        height: 233px;
+        font-size: 2rem;
+    }
+
+    #IntroHeading {
+        margin-top: 8%;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #navbardiv {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbardiv a {
+        height: 50px;
+        width: 110px;
+        font-size: 1.4rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #navbardiv #HelpAnchor {
+        display: none;
+    }
+
+    #navbardiv #HomeTag {
+        padding-right: 1%;
+    }
+
+    ul {
+        margin: 5%;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+
+    .JsClass,
+    textarea {
+        width: 96%;
+    }
+
+    input {
+        width: 100%;
+        margin: 5%;
+    }
+
+    fieldset {
+        font-size: 1.52rem;
+    }
+
+    button {
+        margin-right: 0%;
+    }
+
+    #esistingComments {
+        font-size: 2.8rem;
+    }
+
+    #myPic {
+        width: 240px;
+        margin-top: 6%;
+    }
+
+    .ContactSpans {
+        padding: 2.7%;
+    }
+}
+
+/* MEDIA QUERRY FOR DEVICES HAVING WIDTH B/W 200PX AND 400PX: */
+
+@media (min-width:200px) and (max-width:400px) {
+    header {
+        background-image: url(image10.jpg);
+        background-size: covers;
+        font-size: 2rem;
+        height: 260px;
+        text-align: center;
+    }
+
+    #IntroHeading {
+        margin-top: 8%;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+
+    .hidden {
+        display: inline;
+        color: rgb(254, 187, 187);
+    }
+
+    #text {
+        float: left;
+        color: rgb(254, 187, 187);
+
+    }
+
+    .header2 {
+        background-image: url(image10.jpg);
+        filter: brightness(1);
+    }
+
+    #IntroHeading {
+        margin: 5% 1.2%;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #navbardiv {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbardiv a {
+        height: 45px;
+        width: 110px;
+        font-size: 1.094rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #navbardiv #HelpAnchor {
+        display: none;
+    }
+
+    #navbardiv #HomeTag {
+        padding-right: 1%;
+    }
+
+    ul {
+        margin: 7%;
+    }
+
+    li {
+        font-size: 1.8rem;
+    }
+
+    .JsClass,
+    textarea {
+        width: 95%;
+        margin: 2.55%
+    }
+
+    input {
+        width: 100%;
+        margin: 5%;
+    }
+
+    fieldset {
+        font-size: 1.35rem;
+    }
+
+    button {
+        margin-right: 0%;
+    }
+
+    #FrontendH3,
+    #Backendh3 {
+        font-size: 2.78rem;
+        margin: 7% 0%;
+    }
+
+    #myPic {
+        width: 230px;
+        margin-top: 6%;
+    }
+
+    .ContactSpans {
+        padding: 1.7%;
+    }
+}
